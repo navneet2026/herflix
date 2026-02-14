@@ -161,6 +161,19 @@ function createConfetti() {
     }, 20);
   }
 }
+function checkPassword() {
+  const correctPassword = "abida"; // CHANGE THIS
+  const input = document.getElementById("passwordInput").value;
+  const error = document.getElementById("errorMessage");
+
+  if (input === correctPassword) {
+    document.getElementById("passwordScreen").style.display = "none";
+    document.getElementById("siteContent").style.display = "block";
+  } else {
+    error.textContent = "Wrong password.";
+  }
+}
 
     
+
 
